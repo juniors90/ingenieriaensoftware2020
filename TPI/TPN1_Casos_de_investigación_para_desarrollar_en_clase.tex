@@ -8,61 +8,18 @@
 \usepackage{float}
 \usepackage{longtable,multirow,booktabs}
 \usepackage{amsmath,amsthm, amscd, amssymb, amsfonts, mathtools}
-\usepackage[all]{xy}
-\usepackage{pifont}
 \usepackage{enumitem}
 \usepackage{t1enc}
 \usepackage{fontsmpl}
-\usepackage{subfigure}
 \usepackage[lmargin=2.54cm, tmargin=1.5cm, rmargin=2.54cm, bmargin=3cm]{geometry}
 \usepackage[pdftex,dvipsnames]{xcolor}
-\definecolor{aqua}{rgb}{0.0, 1.0, 1.0}
-\definecolor{caribbeangreen}{rgb}{0.0, 0.8, 0.6}
-\definecolor{tealgreen}{rgb}{0.0, 0.51, 0.5}
 \definecolor{upforestgreen}{rgb}{0.0, 0.27, 0.13}
-\definecolor{napiergreen}{rgb}{0.16, 0.5, 0.0}
-\definecolor{capri}{rgb}{0.0, 0.75, 1.0}
-\definecolor{calpolypomonagreen}{rgb}{0.12, 0.3, 0.17}
-\definecolor{azure(colorwheel)}{rgb}{0.0, 0.5, 1.0}
-\definecolor{darkmagenta}{rgb}{0.55, 0.0, 0.55}% color de las palabras reservadas de base de datos
-\definecolor{darkorchid}{rgb}{0.6, 0.2, 0.8}% color del igual
-\usepackage{fourier-orns}
-\usepackage{extarrows}
-\usepackage[Algoritmo]{algorithm}
-\usepackage{algpseudocode}
-\usepackage[framemethod=TikZ]{mdframed}
-\newcounter{theo}[section]
-\setcounter{theo}{0}
-\renewcommand{\thetheo}{\arabic{section}.\arabic{theo}}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{thm}[theo]{Teorema}
-\newtheorem{lemma}[theo]{Lemma}
-\newtheorem{proposition}[theo]{Proposition}
-\newtheorem{corollary}[theo]{Corollary}
-\theoremstyle{definition}
-\newtheorem{defi}[theo]{Definición}
-\newtheorem{exa}[theo]{Ejemplo}
-\newtheorem{xca}[theo]{Ejercicio}
-\newtheorem{conclusion}[theo]{Conclusion}
-\newtheorem{conj}[theo]{Conjectura}
-\newtheorem{crit}[theo]{Criterio}
-\newtheorem{summary}[theo]{Summary}
-\newtheorem{axi}[theo]{Axioma}
-\newtheorem{problem}[theo]{Problema}
-\numberwithin{algorithm}{section}
-\theoremstyle{remark}
-\newtheorem{rmk}[theo]{Observación}
-\numberwithin{equation}{section}
-\usepackage{bbding}
-\usepackage{pifont}
-\usepackage{wasysym}
-\usepackage{bookmark}
 \setlength{\headheight}{52pt}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\textcolor{upforestgreen}{\textit{Ingeniería de Software II\\
-			                                    J. D. Ferreira}}}
+\fancyhead[L]{\textcolor{upforestgreen}{\textit{Ingeniería de Software II \\
+			                                    J. D. Ferreira; I. A. Viera}}}
 \chead{\includegraphics[width=1cm]{LogoIPF.eps}}
 \fancyhead[R]{
 \textcolor{upforestgreen}{\textit{Esp. Tecnológica en\\
@@ -74,8 +31,6 @@
 \renewcommand{\footrule}{\hbox to\headwidth{\color{upforestgreen}\leaders\hrule height \footrulewidth\hfill}}
 
 \begin{document}
-	
-	
 	%--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 	\begin{titlepage}% Carátula
 		\centering
@@ -294,16 +249,6 @@
     Recién a las 22:30hs, se comenzaron a difundir los datos del escrutinio provisorio. La Justicia electoral había establecido que debían comenzar a difundirse, cuando hubiera un piso mínimo del $10\%$ de los resultados de Capital Federal y las provincias de Buenos Aires, Santa Fe y Córdoba. Ese porcentaje se habría superado en todas las provincias a las 21:00hs. Pero,  el Gobierno decidió difundir los resultados a las 22:30hs. 
     
     En los dos centros de cómputos había 1.700 personas, contratadas por Smartmatic, que hicieron la carga de datos con el software de esta empresa. Había dos data entry por cada telegrama, en un centro de cómputo distinto. Si la información que se cargaba era idéntica, los resultados del telegrama se contabilizaban. Si bien la carga de datos se realizó sin inconvenientes, esos datos no se pudieron visualizar hasta las 22:30hs, cuando ya había más del $30\%$ de votos escrutados en todos los distritos y el gobierno resolvió darlos a conocer. Fue por eso que no se cumplió con el objetivo de difundir los resultados con el $10\%$ de los telegramas transmitidos, tal como había establecido la Justicia electoral.
-    
-    %Los técnicos alertaron que ``los componentes del programa (que se utiliza para la conversión de formato de los telegramas transmitidos desde las escuelas) tienen al menos 46 vulnerabilidades y pueden ser potencialmente explotadas para dañar la integridad del proceso de escrutinio provisorio''.
-
-    
-    %El documento había sido publicado por la Fundación Vía Libre a partir de un trabajo elaborado por el Equipo de Investigación para Perfil.com y las dudas giraban en torno a si el software usado para el escrutinio provisorio modifica los telegramas una vez transmitidos. Los propios técnicos de la empresa contratada por el Estado reconocieron que el scanner genera un archivo TIFF, pero los operadores de carga reciben un PDF. En términos más simples: la imagen que reciben los data entry (que están en el centro de cómputos) no es la misma que sale de la escuela.
-    
-    
-    
-    
-    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
 
     %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
     
@@ -316,9 +261,8 @@
     	\item ¿Cual es la diferencia con el sistema anterior?.
     	\item Si su ejecución no fue óptima ¿Qué pudo haber determinado la falla?, ¿Se pudo evitar?.
     \end{itemize}
-    De este trabajo, podemos decir que la incidencia de la definición de requerimientos con respecto a los objetivos propuesto, es que segun se determinen los requerimientos podremos lograr nuestr objetivo. Este último, consistií en trasmitir los datos de forma rápida y segura de las diferentes escuelas y se determinó que los requerimientos sean que los telegramas compuestos por cada escuela se envíen de forma digital para así obtener un resultado más ágil y más seguro para los votantes, permitir mayor seguridad, ya que las actas de escrutinio se firman digitalmente antes de ser transmitidas y que las autoridades pueden utilizar la aplicación \textcolor{red}{SmartTally} para obtener información acerca del avance del proceso durante la jornada electoral.
-    
-    
+
+    De este trabajo, podemos decir que la incidencia de la definición de requerimientos con respecto a los objetivos propuesto, es que segun se determinen los requerimientos podremos lograr nuestr objetivo. Este último, consistií en trasmitir los datos de forma rápida y segura de las diferentes escuelas y se determinó que los requerimientos sean que los telegramas compuestos por cada escuela se envíen de forma digital para así obtener un resultado más ágil y más seguro para los votantes, permitir mayor seguridad, ya que las actas de escrutinio se firman digitalmente antes de ser transmitidas y que las autoridades pueden utilizar la aplicación \textcolor{red}{SmartTally} para obtener información acerca del avance del proceso durante la jornada electoral.    
     
     La diferencia con el sistema de voto tradicional con el voto electrónico es que se podrá hacer una permite un conteo de votos más agil y así como también el envio de datos en tiempo real desde las escuelas alo centros de computo. Para ello, existen ciertas pautas de seguridad que se deben considerarse:
     
@@ -334,14 +278,10 @@
     %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
     El problema de ejecución fue que los telegramas estaban en el sistema, pero no se podian están convirtir del formato TIFF a pdf, como para que los podamos visualizar y ésto pudo haberse evitado utilizando algún complemento que agilice la conversión de formato TIFF a pdf. 
     
-    
-    
-    
-    
-\bibliographystyle{amsplain}
-\begin{thebibliography}{99}
-	\bibitem{HG} Hoferek, Silvia. Galeano, Ines. \textit{Ingeniería de Software II}, I.P.F. Especialización Tecnológica en Desarrollo de Software. Cohorte {\bf 2}. (2020),
-	pág. 1-5.
-\end{thebibliography}
+    \bibliographystyle{amsplain}
+    \begin{thebibliography}{99}
+    	\bibitem{HG} Hoferek, Silvia. Galeano, Ines. \textit{Ingeniería de Software II}, I.P.F. Especialización Tecnológica en Desarrollo de Software. Cohorte {\bf 2}. (2020),
+    	pág. 1-5.
+    \end{thebibliography}
 
 \end{document}
