@@ -1,4 +1,4 @@
 \babel@toc {spanish}{}
 \beamer@sectionintoc {1}{Casos de fracaso}{5}{0}{1}
-\beamer@sectionintoc {2}{Casos De Éxitos}{18}{0}{2}
-\beamer@sectionintoc {3}{Caso Actual}{29}{0}{3}
+\beamer@sectionintoc {2}{Casos De Éxitos}{22}{0}{2}
+\beamer@sectionintoc {3}{Caso Actual}{34}{0}{3}
