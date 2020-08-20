@@ -1,0 +1,106 @@
+\documentclass[11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{cancel}
+\usepackage{float}
+\usepackage[all]{xy}
+\usepackage{pst-knot}
+\usepackage{epstopdf}
+\usepackage{xcolor}
+\usetheme{Warsaw}% tema de beamer
+\title{Ingeniería en Software II}
+\subtitle[Ed/Ing]{Trabajo Práctico N$^{\circ}$1\\ 
+	Casos de investigación para desarrollar en clase}
+\author{Ferreira, Juan D.\\ % Primer Autor
+	    Viera, Ivan A.      % Segundo Autor
+}
+\titlegraphic{\includegraphics[width=.75cm]{LogoIPF.eps}} % Logo del Instituto
+
+\begin{document}
+	\begin{frame} % título
+		\titlepage
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Contenidos}
+		\tableofcontents[pausesections]
+	\end{frame}
+
+	\section[Casos de fracaso]{Casos de fracaso}
+	\begin{frame}
+		\frametitle{Consignas}
+		\begin{block}{Casos de fracaso}
+			\begin{itemize}
+				\item Establecer al menos 2 casos de fracaso en ingeniería de software.
+				\item Describir los casos seleccionados
+				\item De ser posible especificar los motivos del abandono del proyecto y en que etapas se produjeron
+				las fallas.
+			\end{itemize}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Caso 1: Expediente Virtual}
+		\begin{block}{¿De qué se trata?}
+			\begin{itemize}
+				\item \textbf{Expediente Virtual} (o \textbf{FVC}) era un software de aplicación desarrollado por la FBI entre $2000$ y $2005$.
+				\item El proyecto fue abandonado oficialmente en enero de $2005$, cuando aún estaba en fase de desarrollo y le costó al gobierno federal cerca de $\$170$ millones.
+			\end{itemize}
+		\end{block}
+		\pause
+		\begin{block}{Las razones del fracaso:}
+			\begin{itemize}
+				\item El proyecto demostró un fracaso sistemático de la ingeniería de software prácticas.
+				\item La falta de un plan, desde el principio, llevó a las malas decisiones de arquitectura.
+				\item Los repetidos cambios en las especificaciones.
+			\end{itemize}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Caso 1: Expediente Virtual}
+		\begin{block}{Las razones del fracaso:}
+			\begin{itemize}
+				\item Rotación repetida de la gestión, lo que contribuyó al problema de especificación.
+				\item Microgestión de los desarrolladores de software.
+				\item La inclusión de gran parte del personal del FBI que tenía poco entrenamiento formal o no en la ciencia de la computación como gerentes e incluso los ingenieros en el proyecto.
+				\item El arrastramiento del alcance que los requisitos se añaden continuamente al sistema así como se retrasando.
+				\item Código de la hinchazón debido a las especificaciones cambiantes y la corrupción del alcance. En un momento se estimó que el software tenía más de 700.000 líneas de código.
+				\item Planificación de uso de un flash de corte y cambio de implementación, lo que dificultó la adopción del sistema hasta que se perfeccionó.
+			\end{itemize}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Caso 1: Expediente Virtual}
+		\begin{block}{Consecuencias:}
+			\begin{itemize}
+				\item Fuertes críticas sociales tras el fracaso del programa VCF.
+				\item Gran perdida de tiempo y dinero.
+				\item La utilización del anticuado sistema de ACS, que muchos analistas sienten que está obstaculizando la oficina en la lucha contra el terrorismo.
+			\end{itemize}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Caso 2: National Institute of Standarts and Technology (NIST)}
+		\begin{block}{¿De qué se trata?}
+			El Instituto Nacional de Normas y Tecnología(\textbf{NIST} por sus siglas en inglés, National Institute of Standards and Technology) es una agencia de la Administración de Tecnología del Departamento de Comercio de los Estados Unidos. La misión de este instituto es promover la innovación y la competencia industrial en Estados Unidos mediante avances en metrología, normas y tecnología de forma que mejoren la estabilidad económica y la calidad de vida para la cual tenia un software \textbf{NIST}, entre otras cosas.
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Caso 2: National Institute of Standarts and Technology (NIST)}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textheight]{NIST.PNG}
+			\caption{{\scriptsize \url{https://www.nist.gov/services-resources/software/topic/249421}}}
+		\end{figure}
+	\end{frame}
+\end{document}

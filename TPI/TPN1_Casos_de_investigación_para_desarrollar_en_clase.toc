@@ -1,0 +1,20 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Actividades}{3}{section.1}%
+\contentsline {section}{\numberline {2}Casos de fracaso}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Caso 1: Expediente Virtual}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Las razones del fracaso:}{3}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Consecuencias}{3}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Caso 2: National Institute of Standarts and Technology (NIST)}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Motivos}{4}{subsubsection.2.2.1}%
+\contentsline {section}{\numberline {3}Casos de éxito}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Caso 3: SkyMeD}{4}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Las razones del éxito:}{4}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}¿Se ajustan los resultados a los requerimientos planteados?}{4}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Caso 4: Tik Tok}{5}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Las razones del éxito:}{5}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}¿Se ajustan los resultados a los requerimientos planteados?}{5}{subsubsection.3.2.2}%
+\contentsline {section}{\numberline {4}Caso actual}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Caso 5: Smatmatic: Elecciones argentina 2019}{5}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Smartmatic en Argentina: Los objetivos y requerimientos:}{5}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Desempeño del sistema}{6}{subsubsection.4.1.2}%
+\contentsline {section}{\numberline {5}Conclusión}{6}{section.5}%

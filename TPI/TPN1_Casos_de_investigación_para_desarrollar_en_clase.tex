@@ -1,0 +1,347 @@
+\documentclass[titlepage,a4paper,twoside]{article}
+\usepackage{a4wide}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=red,bookmarksopen=true]{hyperref}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{longtable,multirow,booktabs}
+\usepackage{amsmath,amsthm, amscd, amssymb, amsfonts, mathtools}
+\usepackage[all]{xy}
+\usepackage{pifont}
+\usepackage{enumitem}
+\usepackage{t1enc}
+\usepackage{fontsmpl}
+\usepackage{subfigure}
+\usepackage[lmargin=2.54cm, tmargin=1.5cm, rmargin=2.54cm, bmargin=3cm]{geometry}
+\usepackage[pdftex,dvipsnames]{xcolor}
+\definecolor{aqua}{rgb}{0.0, 1.0, 1.0}
+\definecolor{caribbeangreen}{rgb}{0.0, 0.8, 0.6}
+\definecolor{tealgreen}{rgb}{0.0, 0.51, 0.5}
+\definecolor{upforestgreen}{rgb}{0.0, 0.27, 0.13}
+\definecolor{napiergreen}{rgb}{0.16, 0.5, 0.0}
+\definecolor{capri}{rgb}{0.0, 0.75, 1.0}
+\definecolor{calpolypomonagreen}{rgb}{0.12, 0.3, 0.17}
+\definecolor{azure(colorwheel)}{rgb}{0.0, 0.5, 1.0}
+\definecolor{darkmagenta}{rgb}{0.55, 0.0, 0.55}% color de las palabras reservadas de base de datos
+\definecolor{darkorchid}{rgb}{0.6, 0.2, 0.8}% color del igual
+\usepackage{fourier-orns}
+\usepackage{extarrows}
+\usepackage[Algoritmo]{algorithm}
+\usepackage{algpseudocode}
+\usepackage[framemethod=TikZ]{mdframed}
+\newcounter{theo}[section]
+\setcounter{theo}{0}
+\renewcommand{\thetheo}{\arabic{section}.\arabic{theo}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{thm}[theo]{Teorema}
+\newtheorem{lemma}[theo]{Lemma}
+\newtheorem{proposition}[theo]{Proposition}
+\newtheorem{corollary}[theo]{Corollary}
+\theoremstyle{definition}
+\newtheorem{defi}[theo]{Definición}
+\newtheorem{exa}[theo]{Ejemplo}
+\newtheorem{xca}[theo]{Ejercicio}
+\newtheorem{conclusion}[theo]{Conclusion}
+\newtheorem{conj}[theo]{Conjectura}
+\newtheorem{crit}[theo]{Criterio}
+\newtheorem{summary}[theo]{Summary}
+\newtheorem{axi}[theo]{Axioma}
+\newtheorem{problem}[theo]{Problema}
+\numberwithin{algorithm}{section}
+\theoremstyle{remark}
+\newtheorem{rmk}[theo]{Observación}
+\numberwithin{equation}{section}
+\usepackage{bbding}
+\usepackage{pifont}
+\usepackage{wasysym}
+\usepackage{bookmark}
+\setlength{\headheight}{52pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{upforestgreen}{\textit{Ingeniería de Software II\\
+			                                    J. D. Ferreira}}}
+\chead{\includegraphics[width=1cm]{LogoIPF.eps}}
+\fancyhead[R]{
+\textcolor{upforestgreen}{\textit{Esp. Tecnológica en\\
+		                          Desarrolo de Software}}}
+\renewcommand{\headrulewidth}{1.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{upforestgreen}\leaders\hrule height \headrulewidth\hfill}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1.5pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{upforestgreen}\leaders\hrule height \footrulewidth\hfill}}
+
+\begin{document}
+	
+	
+	%--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+	\begin{titlepage}% Carátula
+		\centering
+		\vfill
+		\Huge \textcolor{upforestgreen}{
+			\textbf{Ingeniería de Software II\\
+				Trabajo Práctico 1: Casos de investigación para desarrollar en clase}}
+		\vskip2cm
+		\Large
+		Segundo Cuatrimestre. Ciclo Lectivo 2020
+		\vfill
+		\includegraphics[width=6cm]{LogoIPF.eps}
+		\vfill
+		\begin{tabular}{ | l | l | } % Datos del alumno
+			\hline
+			Alumno: & Ferreira, Juan David      \\ \hline
+			Email:  & juandavid9a0@gmail.com    \\ \hline
+			Alumno: & Viera, Ivan               \\ \hline
+			Email:  & vieraatilio2017@gmail.com \\ \hline
+		\end{tabular}
+		\vfill
+		\vfill
+	\end{titlepage}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \tableofcontents % Índice general
+    
+    \newpage
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    \section{Actividades}
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \section{Casos de fracaso}
+    
+    \begin{itemize}
+    	\item Establecer al menos 2 casos de fracaso en ingeniería de software.
+    	\item Describir los casos seleccionados
+    	\item De ser posible especificar los motivos del abandono del proyecto y en que etapas se produjeron
+    	las fallas.
+    \end{itemize}
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \subsection{Caso 1: Expediente Virtual}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \textbf{Expediente Virtual} (o \textbf{FVC}) era un software de aplicación desarrollado por la United States Federal Bureau of Investigation (FBI) entre $2000$ y $2005$. El proyecto fue abandonado oficialmente en enero de $2005$, cuando aún estaba en fase de desarrollo y le costó al gobierno federal cerca de $\$170$ millones.
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \subsubsection{Las razones del fracaso:}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \begin{enumerate}
+    	\item El proyecto demostró un fracaso sistemático de la ingeniería de software prácticas: [2]
+    	\item La falta de un fuerte plan desde el principio, llevó a las malas decisiones de arquitectura.
+    	\item Los repetidos cambios en las especificaciones.
+    	\item Rotación repetida de la gestión, lo que contribuyó al problema de especificación.
+    	\item Microgestión de los desarrolladores de software.
+    	\item La inclusión de gran parte del personal del FBI que tenía poco entrenamiento formal o no en la ciencia de la computación como gerentes e incluso los ingenieros en el proyecto.
+    	\item El arrastramiento del alcance que los requisitos se añaden continuamente al sistema así como se retrasando.
+    	\item Código de la hinchazón debido a las especificaciones cambiantes y la corrupción del alcance. En un momento se estimó que el software tenía más de 700.000 líneas de código.
+    	\item Planificación de uso de un flash de corte y cambio de implementación, lo que dificultó la adopción del sistema hasta que se perfeccionó.
+    \end{enumerate}
+   
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+   
+    \subsubsection{Consecuencias}
+   
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+   
+    La oficina se enfrentó a una gran cantidad de críticas tras el fracaso del programa VCF. El programa perdió US $\$104$ millones en dinero de los contribuyentes. Además, la agencia continúa utilizando el anticuado sistema de ACS, que muchos analistas sienten que está obstaculizando la oficina de la nueva lucha contra el terrorismo de la misión. En marzo de 2005, la oficina anunció que está comenzando un nuevo proyecto, el software más ambicioso cuyo nombre en código es Sentinel para sustituir a ACS.
+   
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+   
+    \subsection{Caso 2: National Institute of Standarts and Technology (NIST)}
+   
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+   
+    El Instituto Nacional de Estándares y Tecnología (NIST), conocido entre $1901$ y $1988$ como el National Bureau of  Standards (NBS), es un laboratorio de medición de los estándares, también conocido como el Instituto Nacional de Metrología (INM), que es una agencia sin fines de regulación del Departamento de Comercio estadounidense. Misión oficial del instituto.
+   
+    NIST tuvo un presupuesto de funcionamiento para el año fiscal $2007$ ($1$ de Octubre del $2006$ hasta el $30$ de Septiembre del $2007$) de alrededor de $843.3$ millones dólares. $2009$ del NIST presupuesto era de $\$992$ millones, pero también recibió $\$610$ millones como parte de la Ley de Recuperación y Reinversión. NIST emplea a cerca de $2.900$ científicos, ingenieros, técnicos y de apoyo y personal administrativo. Unos $1.800$ socios del NIST (investigadores invitados e ingenieros de las empresas estadounidenses y las naciones extranjeras) para complementar el personal. Además, los socios del NIST con $1.400$ especialistas en fabricación y el personal de cerca de $350$ centros afiliados en todo el país.
+   
+    NIST tiene su sede en Gaithersburg, Maryland, y opera una planta en Boulder, Colorado. Las actividades del NIST se organizan en programas de laboratorio y programas de extensión universitaria. El $1$ de octubre de $2010$, el NIST fue reajustado mediante la reducción del número de unidades de laboratorio del NIST de diez hasta seís. Los laboratorios del NIST son:
+    
+    \begin{enumerate}
+    	\item Laboratorio de Ingeniería (EL).
+    	\item Laboratorio de Tecnología de la Información (DIT). 
+    	\item Material de medición de laboratorio (MML). 
+    	\item Física Laboratorio de Medición (LMP).
+    	\item Centro de Nanotecnología de Ciencia y Tecnología (CNST).
+    	\item NIST Centro para la Investigación de Neutrones (NCNR).
+    \end{enumerate}
+   
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+   
+    \subsubsection{Motivos}
+   
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    Los errores de software, o errores, son tan frecuentes y perjudiciales para que costó a la economía de los EE.UU. un estimado de $\$ 59.5$ mil millones al año, o aproximadamente el $0,6$ por ciento del producto interno bruto, según un estudio recién publicado encargado por el Departamento de \textit{Comercio del Instituto Nacional de Estándares y Tecnología} (NIST). \textbf{A nivel nacional, más de la mitad de los gastos son sufragados por los usuarios de software y el resto por los desarrolladores de software o vendedores}.
+    
+    Según cálculos del \textit{Instituto Nacional de Estándares y Tecnología} (NIST) de los  estados Unidos, en el año $2002$ las pérdidas por errores del software en el mercado Norteamericano rondaron los $67,5$ mil millones de euros, lo que equivale al $0,6\%$ del Producto Interior Bruto del país.    
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+   
+   
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+
+    \section{Casos de éxito}
+    
+    \begin{itemize}
+    	\item Establecer al menos 2 casos conocidos.
+    	\item Enumerar sus beneficios respecto a los objetivos planteados
+    	\item ¿Se ajustan los resultados a los requerimientos planteados?
+    \end{itemize}
+
+    \subsection{Caso 3: SkyMeD}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    El proyecto se denomina "\textbf{SkyMeD}" y es uno de los $10$ emprendimientos que consiste en un Sistema de Relevamiento, Monitoreo y Gestión digital de datos para Instituciones de Salud y entidades de control que llevan adelante el control de personas en Aislamiento Social Obligatorio (ASO), ante la presencia de COVID-19.
+    
+    Cuando apareció la pandemia, les pareció una buena idea realizar una acción de Responsabilidad Social Empresaria para colaborar con la situación y se pusieron manos a la obra.
+    
+    El 29 de abril comenzaron la carga de datos y se aventuraron en elaborar un sistema de monitoreo similar para Defensa Civil que informa en tiempo real a cada hospital de la zona, las personas que deben ser ingresadas a aislamiento, lo cual permite iniciar los protocolos de forma urgente, sin perder tiempo.
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \subsubsection{Las razones del éxito:}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \begin{enumerate}
+    	\item La aplicación permite que las entidades cuenten en tiempo real con información estratégica para activar sus protocolos en forma inmediata.
+    	
+    	\item El desarrollo puede ser adaptado a múltiples propositos (incluso post pandemia ) al trabajo con otras enfermedades como Hanta Virus y Dengue, o de plagas como la Mosca de la fruta.
+    \end{enumerate}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \subsubsection{¿Se ajustan los resultados a los requerimientos planteados?}
+    
+    El emprendimiento si se ajusta a los requerimientos planteados y está está siendo utilizado por Defensa Civil y además está funcionando para los hospitales de Lago Puelo, El Hoyo, Cholila, El Maitén y Epuyén; junto a Bomberos Voluntarios, Defensa Civil del Municipio y el área de Bosques de la zona están armando un sistema de relevamiento de familias en riesgo de inundación y otro proyecto con la Universidad Nacional de la Patagonia San Juan Bosco de Comodoro Rivadavia para un desarrollo tecnológico para plagas.
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \subsection{Caso 4: Tik Tok}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \textbf{TikTok}, es una red social de origen chino que permite grabar, editar y compartir vídeos cortos, que pisa fuerte en la actualidad. Una aplicación fundamentalmente enfocada a las nuevas generaciones, que recuerda a otras redes sociales pasadas como Vine (la aplicación de Twitter que cerró hace algunos años), pero con la particularidad de permitir a sus usuarios compartir vídeos cortos e instantáneos, añadiendo fondos animados, efectos de sonido y muchos otros filtros visuales.
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \subsubsection{Las razones del éxito:}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \begin{enumerate}
+    	\item La app china que ha adoptado lo mejor de Instagram, Facebook y Twitter, para fusionar sus puntos más fuertes, y colocarse entre las aplicaciones móviles más utilizadas, hoy en día, por los jóvenes y adolescentes.
+    	\item La app permite crear vídeos musicales -o, a veces, montajes con \textbf{playback}-, pero también vídeos cómicos con filtros, duetos entre usuarios, \textit{challenges} y un sinfín de combinaciones más, de efecto inmediato e instantáneo
+    	\item Una app permite encontrar divertidos vídeos en bucle, ambientados con música muy actual, y con filtros visuales para decorar los contenidos de aquellos usuarios que, inmersos ya en la mensajería instantánea, pueden compartir sus vídeos de entre 15 y 60 segundos.
+    	\item 
+    \end{enumerate}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \subsubsection{¿Se ajustan los resultados a los requerimientos planteados?}
+    
+    La aplicacón se ajusta a los requerimientos planteados y cada vez es más común ver también a las marcas creando contenidos para visualizar sus productos. Incluso, a organizaciones como la de las Naciones Unidas utilizando la plataforma para suscitar interés en temas realmente importantes, como la hambruna mundial o el calentamiento global, a través del impulso de retos como el $\#danceforchange.$
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \section{Caso actual}
+    
+    \begin{itemize}
+    	\item Smatmatic: Elecciones argentina 2019
+    	\item Establecer cuales les parece que fueron los requerimientos.
+    	\item ¿Se cumplieron los objetivos?
+    \end{itemize}
+
+    \subsection{Caso 5: Smatmatic: Elecciones argentina 2019}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \textbf{Smartmatic} es una empresa multinacional especializada en soluciones tecnológicas para aumentar la transparencia y mejorar la integridad de las elecciones. Hoy posee más de $600$ empleados distribuidos en Estados Unidos, Barbados, Brasil, Venezuela, Panamá, Reino Unido, Países Bajos, Filipinas y Taiwán. Esta compañía se encuentra organizada en tres áreas de negocios: 
+    \begin{enumerate}
+    	\item \textbf{Soluciones electorales}: voto electrónico, planificiación y despliegue de proyectos electorales,
+    	\item \textbf{Gestión de identidad}: registro civil, censo electoral, proyectos de registro y autenticación biométrica de personas y
+    	\item \textbf{Soluciones para ciudades inteligentes (smart cities)}: en sistemas inteligentes de transporte público y plataformas de seguridad ciudadana.
+    \end{enumerate}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \subsubsection{Smartmatic en Argentina: Los objetivos y requerimientos:}
+    
+    La empresa Smartmatic le vendió a nuestro país un software llamado \href{https://www.smartmatic.com/es/elecciones/elecciones-manuales/smarttally/}{SmartTally}, solución que tiene como \textbf{objetivo} la transmisión de datos desde las escuelas. Algunos de los \textbf{requerimientos} del sistema fueron
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \begin{enumerate}
+    	\item permitir que los telegramas de cada escuelas sean enviados de Forma virtual: antes, los telegramas se mandaban por vía terrestre al Correo,
+    	\item Permitir mayor seguridad, ya que las actas de escrutinio se firman digitalmente antes de ser transmitidas.
+    	\item Las autoridades también pueden utilizar la aplicación SmartTally para obtener información acerca del avance del proceso durante la jornada electoral
+    \end{enumerate}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \subsubsection{Desempeño del sistema}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    Recién a las 22:30hs, se comenzaron a difundir los datos del escrutinio provisorio. La Justicia electoral había establecido que debían comenzar a difundirse, cuando hubiera un piso mínimo del $10\%$ de los resultados de Capital Federal y las provincias de Buenos Aires, Santa Fe y Córdoba. Ese porcentaje se habría superado en todas las provincias a las 21:00hs. Pero,  el Gobierno decidió difundir los resultados a las 22:30hs. 
+    
+    En los dos centros de cómputos había 1.700 personas, contratadas por Smartmatic, que hicieron la carga de datos con el software de esta empresa. Había dos data entry por cada telegrama, en un centro de cómputo distinto. Si la información que se cargaba era idéntica, los resultados del telegrama se contabilizaban. Si bien la carga de datos se realizó sin inconvenientes, esos datos no se pudieron visualizar hasta las 22:30hs, cuando ya había más del $30\%$ de votos escrutados en todos los distritos y el gobierno resolvió darlos a conocer. Fue por eso que no se cumplió con el objetivo de difundir los resultados con el $10\%$ de los telegramas transmitidos, tal como había establecido la Justicia electoral.
+    
+    %Los técnicos alertaron que ``los componentes del programa (que se utiliza para la conversión de formato de los telegramas transmitidos desde las escuelas) tienen al menos 46 vulnerabilidades y pueden ser potencialmente explotadas para dañar la integridad del proceso de escrutinio provisorio''.
+
+    
+    %El documento había sido publicado por la Fundación Vía Libre a partir de un trabajo elaborado por el Equipo de Investigación para Perfil.com y las dudas giraban en torno a si el software usado para el escrutinio provisorio modifica los telegramas una vez transmitidos. Los propios técnicos de la empresa contratada por el Estado reconocieron que el scanner genera un archivo TIFF, pero los operadores de carga reciben un PDF. En términos más simples: la imagen que reciben los data entry (que están en el centro de cómputos) no es la misma que sale de la escuela.
+    
+    
+    
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    
+    \section{Conclusión}
+    
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+
+    \begin{itemize}
+    	\item Incidencia de la definición de requerimientos con los objetivos.
+    	\item ¿Cual es la diferencia con el sistema anterior?.
+    	\item Si su ejecución no fue óptima ¿Qué pudo haber determinado la falla?, ¿Se pudo evitar?.
+    \end{itemize}
+    De este trabajo, podemos decir que la incidencia de la definición de requerimientos con respecto a los objetivos propuesto, es que segun se determinen los requerimientos podremos lograr nuestr objetivo. Este último, consistií en trasmitir los datos de forma rápida y segura de las diferentes escuelas y se determinó que los requerimientos sean que los telegramas compuestos por cada escuela se envíen de forma digital para así obtener un resultado más ágil y más seguro para los votantes, permitir mayor seguridad, ya que las actas de escrutinio se firman digitalmente antes de ser transmitidas y que las autoridades pueden utilizar la aplicación \textcolor{red}{SmartTally} para obtener información acerca del avance del proceso durante la jornada electoral.
+    
+    
+    
+    La diferencia con el sistema de voto tradicional con el voto electrónico es que se podrá hacer una permite un conteo de votos más agil y así como también el envio de datos en tiempo real desde las escuelas alo centros de computo. Para ello, existen ciertas pautas de seguridad que se deben considerarse:
+    
+    \begin{enumerate}
+    	\item \textbf{Vulnerabilidades}: cuantas más pruebas y correcciones se lleven a cabo sobre un software, menor es la posibilidad de fallas, que en este caso pueden convertirse en fraudes. El uso de sistemas de código abierto o sujeto a pruebas por parte de la comunidad experta, puede aportar confianza en todo el sistema y esto es clave.
+    	
+    	\item \textbf{Transparencia}: si se utiliza una tecnología de almacenamiento físico para su lectura posterior, se debe asegurar que cada elemento contenga uno y sólo un voto. Se pueden establecer controles complementarios garantizando así la integridad de la boleta.
+    	
+    	\item \textbf{Confidencialidad}: los canales digitales que se utilizan para transmitir información (ya sea entre boletas y lectoras, entre computadoras o una combinación eficiente de ambas) deben estar debidamente encriptadas, para garantizar la confidencialidad.
+    	
+    	\item \textbf{Educació}n: la concientización de los votantes en materia de seguridad es tan importante como su deber cívico a la hora de ejecutar el voto. Debemos seguir aprendiendo en este sentido, como lo hacemos frente a la transformación digital de los bancos, las escuelas, la vida social o la situación fiscal.
+    \end{enumerate}
+    %--------------------------------------------------------------------------------------------------------------------------------------------------------------------%
+    El problema de ejecución fue que los telegramas estaban en el sistema, pero no se podian están convirtir del formato TIFF a pdf, como para que los podamos visualizar y ésto pudo haberse evitado utilizando algún complemento que agilice la conversión de formato TIFF a pdf. 
+    
+    
+    
+    
+    
+\bibliographystyle{amsplain}
+\begin{thebibliography}{99}
+	\bibitem{HG} Hoferek, Silvia. Galeano, Ines. \textit{Ingeniería de Software II}, I.P.F. Especialización Tecnológica en Desarrollo de Software. Cohorte {\bf 2}. (2020),
+	pág. 1-5.
+\end{thebibliography}
+
+\end{document}
